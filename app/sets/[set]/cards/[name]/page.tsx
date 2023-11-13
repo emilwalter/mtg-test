@@ -41,6 +41,20 @@ export default async function SingleCardPage({
           className="rounded-lg"
         />
       </div>
+      <h2 className="text-2xl font-bold mt-10">Alternate Card faces</h2>
+      <div className="grid grid-cols-4 gap-2 mt-10">
+        {card.card_faces?.map((face: any) => (
+          <div key={face.id}>
+            <Image
+              height={500}
+              width={300}
+              src={face.image_uris?.normal}
+              alt={face.name}
+              className="rounded-lg"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
