@@ -1,3 +1,3 @@
 export default function Page() {
-  return <main className="flex min-h-screen flex-col p-6">Main screen!</main>;
+  return <main className="max-w-7xl max-auto p-4">Main screen!</main>;
 }
